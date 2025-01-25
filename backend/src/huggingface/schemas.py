@@ -10,7 +10,7 @@ class RemoteModelFile(BaseModel):
     sha256: Optional[str]
 
 class HuggingFaceMetadata(BaseModel):
-            id: str
-            name: str
-            files: list[RemoteModelFile]
-            is_diffusers: bool
+    id: str
+    name: str
+    files: list[RemoteModelFile]
+    is_diffusers: bool

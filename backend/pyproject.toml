@@ -5,6 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "asyncio>=3.4.3",
+    "fastapi-events>=0.12.2",
     "fastapi[standard]>=0.115.6",
     "huggingface-hub>=0.27.1",
+    "sse-starlette>=2.2.1",
 ]

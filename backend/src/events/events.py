@@ -29,7 +29,7 @@ class ModelDownloadProgressEvent(BaseModel):
 
     @classmethod
     def build(cls, model_id: str, download_path: str, current_bytes: int, total_bytes: int) -> "ModelDownloadProgressEvent":
-        progress_percentage = (current_bytes / total_bytes) * 100
+        progress_percentage = int((current_bytes / total_bytes) * 100)
         return cls(
             model_id=model_id,
             download_path=download_path,
